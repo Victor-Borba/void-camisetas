@@ -1,0 +1,37 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">Void Store</span><span class="main-header__title--orange">camisetas</span>
+    </h1>
+    <div class="container-menu">
+
+        <nav class="main-header__menu">
+            
+            <ul>
+                <li>
+                    <a routerLink="/"> Produtos </a>
+                </li>
+                <li>
+                    <a routerLink="/carrinho/">Carrinho
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a routerLink="/contato/">Contato</a>
+                </li>
+                <li>
+                <a><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a><i class="fa-brands fa-instagram-square"></i></a>
+            </li>
+            <li>
+                <a><i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <app-barra-pesquisa></app-barra-pesquisa>
+    
+</div>
+</header>

@@ -1,0 +1,32 @@
+<h2 class="contact__title">Entre em contato</h2>
+<section class="contact__container">
+    <form  class="contact__form" [formGroup]="formContato">
+        <input 
+            type="text" 
+            placeholder="digite seu nome"
+            formControlName="nome"
+            [class.valid]="formContato.controls['nome'].valid"
+            [class.invalid]="formContato.controls['nome'].invalid"
+            >
+        <input 
+            type="assunto" 
+            placeholder="digite o assunto"
+            [class.valid]="formContato.controls['assunto'].valid"
+            [class.invalid]="formContato.controls['assunto'].invalid"
+        >
+        <input 
+            type="tel" 
+            placeholder="(xx) x xxxx-xxxx"
+            mask="(00) 0 0000-0000"
+        >
+        <input 
+            type="email" 
+            placeholder="digite seu email"
+        >
+        <textarea maxlength="300"></textarea>
+        <button [disabled]="">Enviar</button>
+    </form>
+    <address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.4314608057425!2d-49.33417883792584!3d-16.76441488902012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef788b0320125%3A0x486ec29b00bbf647!2zMTbCsDQ1JzU1LjAiUyA0OcKwMjAnMDcuOSJX!5e0!3m2!1spt-PT!2sbr!4v1654182177254!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </address>
+</section>
